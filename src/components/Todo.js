@@ -3,11 +3,13 @@ import React from 'react';
 
 const Todo = ({ text,todo, todos, setTodo }) =>{
 
+    // funtion to delete todo
     const deleteHandler = ()=>{
 
         setTodo(todos.filter((el) => el.id !== todo.id))
     }
 
+    // to check completed todo for styling
     const completeHandler = () => {
 
         setTodo(todos.map((item) => {
